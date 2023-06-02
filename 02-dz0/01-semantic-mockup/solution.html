@@ -4,87 +4,42 @@
   <head>
     <meta charset="utf-8" />
     <title>Тестовая страница</title>
-    <style>
-      body {
-        color: white;
-      }
-      h1,
-      h2 {
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      a {
-        color: white;
-      }
-      .header {
-        background-color: red;
-        text-align: center;
-      }
-      .nav {
-        background-color: orange;
-        text-decoration: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      .main {
-        background-color: green;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-      }
-      article {
-        background-color: blue;
-        margin-top: 10px;
-      }
-      .footer {
-        background-color: purple;
-        text-align: center;
-      }
-      ol,
-      ul {
-        padding-bottom: 10px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="/02-dz0/01-semantic-mockup/style-for-02dz.css"
+    />
   </head>
   <body>
     <header class="header">
-      <h1>Header</h1>
-      <nav class="nav">
-        <a href="#">Navigation 1</a>
-        <a href="#">Navigation 2</a>
-        <a href="#">Navigation 3</a>
+      <h1 class="header__title">Header</h1>
+      <nav class="header__nav">
+        <a href="#" class="header__link">Navigation 1</a>
+        <a href="#" class="header__link">Navigation 2</a>
+        <a href="#" class="header__link">Navigation 3</a>
       </nav>
     </header>
     <main class="main">
-      <article>
-        <h2>Article 1</h2>
-        <ul>
-          Оригинальная трилогия
-        </ul>
-        <ul>
-          Трилогия приквелов
-        </ul>
-        <ul>
-          Трилогия сиквелов
+      <article class="article">
+        <h2 class="article__title">Article 1</h2>
+        <ul class="article__list">
+          <li class="article__item">Оригинальная трилогия</li>
+          <li class="article__item">Трилогия приквелов</li>
+          <li class="article__item">Трилогия сиквелов</li>
         </ul>
       </article>
-      <article>
-        <h2>Article 2</h2>
-        <ol>
-          Эпизод IV — Новая надежда
-        </ol>
-        <ol>
-          Эпизод V — Империя наносит ответный удар
-        </ol>
-        <ol>
-          Эпизод VI — Возвращение джедая
+      <article class="article">
+        <h2 class="article__title">Article 2</h2>
+        <ol class="article__list">
+          <li class="article__item">Эпизод IV — Новая надежда</li>
+          <li class="article__item">
+            Эпизод V — Империя наносит ответный удар
+          </li>
+          <li class="article__item">Эпизод VI — Возвращение джедая</li>
         </ol>
       </article>
     </main>
     <footer class="footer">
-      <h1>Footer</h1>
+      <h1 class="footer__title">Footer</h1>
     </footer>
   </body>
 </html>
