@@ -1,0 +1,49 @@
+body {
+  color: white;
+}
+.header {
+  background-color: red;
+  text-align: center;
+}
+.header__title,
+.footer__title {
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 3em;
+}
+.header__nav {
+  background-color: orange;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header__link {
+  color: white;
+  font-size: 1.5em;
+}
+.header__link:not(:last-child) {
+  margin-right: 10px;
+}
+.main {
+  background-color: green;
+  padding: 10px;
+}
+.article {
+  background-color: blue;
+  padding: 10px;
+}
+.article:last-child {
+  margin-top: 10px;
+}
+.article__title {
+  margin: 0px;
+}
+.article__list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: purple;
+  text-align: center;
+}
