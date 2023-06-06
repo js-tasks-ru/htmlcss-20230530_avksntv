@@ -1,49 +1,49 @@
 body {
   color: white;
 }
-.header {
+.c-header {
   background-color: red;
   text-align: center;
 }
-.header__title,
-.footer__title {
+.c-header__title,
+.c-footer__title {
   margin: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 3em;
 }
-.header__nav {
+.c-header__nav {
   background-color: orange;
   text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.header__link {
+.c-header__link {
   color: white;
   font-size: 1.5em;
 }
-.header__link:not(:last-child) {
+.c-header__link:not(:last-child) {
   margin-right: 10px;
 }
-.main {
+.l-main {
   background-color: green;
   padding: 10px;
 }
-.article {
+.c-article {
   background-color: blue;
   padding: 10px;
 }
-.article:last-child {
+.c-article:last-child {
   margin-top: 10px;
 }
-.article__title {
+.c-article__title {
   margin: 0px;
 }
-.article__list {
+.c-article__list {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.footer {
+.c-footer {
   background-color: purple;
   text-align: center;
 }
