@@ -6,13 +6,10 @@
   margin-top: 24px;
   margin-left: 160px;
   margin-right: 160px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .header__title {
-  margin-top: 40px;
-  margin-bottom: 38px;
+  margin-top: 38px;
+  margin-bottom: 40px;
   margin-left: 160px;
   font-weight: 500;
   font-size: 50px;
