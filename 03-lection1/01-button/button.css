@@ -1,83 +1,48 @@
 /* Стилизация кнопки */
-.buttons {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-.buttons__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 189px;
-  height: 48px;
+.button {
+  padding: 15px;
   border-radius: 8px;
-  padding: 15px 0px 14px 0px;
-  margin-right: 33px;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
-.buttons__primary {
-  background: #4263eb;
-  color: #ffffff;
-  border: 1px solid #4263eb;
-  transition: background-color 1s;
+.button_primary {
+  background: var(--blue-2);
+  color: var(--white);
+  border: 1px solid var(--blue-2);
 }
-.buttons__primary:hover,
-.buttons__primary:active,
-.buttons__primary:focus {
-  background: #2342c0;
-  border: 1px solid #2342c0;
+.button_primary:hover,
+.button_primary:active,
+.button_primary:focus {
+  background: var(--blue-3);
+  border: 1px solid var(--blue-3);
   cursor: pointer;
 }
-.buttons__primary_disabled {
-  opacity: 0.5;
+.button_secondary {
+  background: var(--purple);
+  color: var(--white);
+  border: 1px solid var(--purple);
 }
-.buttons__primary_disabled:hover {
-  background: #4263eb;
-  border: 1px solid #4263eb;
-  cursor: not-allowed;
-}
-.buttons__secondary {
-  background: #7048e8;
-  color: #ffffff;
-  border: 1px solid #7048e8;
-  transition: background-color 1s;
-}
-.buttons__secondary:hover,
-.buttons__secondary:active,
-.buttons__secondary:focus {
-  background: #5028c6;
-  border: 1px solid #5028c6;
+.button_secondary:hover,
+.button_secondary:active,
+.button_secondary:focus {
+  background: var(--purple-2);
+  border: 1px solid var(--purple-2);
   cursor: pointer;
 }
-.buttons__secondary_disabled {
-  opacity: 0.5;
+.button_alternate {
+  background: var(--white);
+  color: var(--grey-4);
+  border: 1px solid var(--grey-4);
 }
-.buttons__secondary_disabled:hover {
-  background: #7048e8;
-  border: 1px solid #7048e8;
-  cursor: not-allowed;
-}
-.buttons__alternate {
-  background: #ffffff;
-  color: #495057;
-  border: 1px solid #495057;
-  transition: background-color 1s;
-}
-.buttons__alternate:hover,
-.buttons__alternate:active,
-.buttons__alternate:focus {
-  border: 1px solid #212429;
+.button_alternate:hover,
+.button_alternate:active,
+.button_alternate:focus {
+  border: 1px solid var(--black);
   cursor: pointer;
 }
-.buttons__alternate_disabled {
+.button:disabled {
   opacity: 0.5;
-}
-.buttons__alternate_disabled:hover {
-  border: 1px solid #495057;
-  cursor: not-allowed;
+  pointer-events: none;
 }
