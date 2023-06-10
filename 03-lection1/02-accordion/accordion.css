@@ -1,46 +1,24 @@
-/* Стилизация аккордеона */
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none;
-}
-/* Убираем стандартный маркер Firefox */
-details > summary {
+/*Убрать маркер*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.accordion > .accordion__item {
   list-style: none;
 }
-/* Добавляем собственный маркер для закрытого состояния */
-details summary:before {
-  content: url('/03-lection1/02-accordion/icon.svg');
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-/* Добавляем собственный маркер для открытого состояния */
-details[open] summary:before {
-  transform: rotate(180deg);
-}
-
-.accordions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .accordion {
-  width: 730px;
   border: 1px solid black;
   border-radius: 8px;
-  margin-bottom: 10px;
   padding: 24px 32px;
+  margin-bottom: 8px;
+}
+.accordion:last-child {
+  margin-bottom: 0px;
+}
+.accordion_text-style {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.accordion:last-child {
-  margin-bottom: 0;
-}
-.accordion__summary {
-  color: #495057;
-  position: relative;
-}
-.accordion__item {
-  color: #495057;
+.accordion__content {
+  margin-top: 16px;
 }
